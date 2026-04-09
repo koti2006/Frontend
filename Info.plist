@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- URL Types (keep this if already used) -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict/>
+    </array>
+
+    <!-- ============================= -->
+    <!-- App Transport Security (ATS) -->
+    <!-- ============================= -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!-- Allow HTTP APIs (NOT recommended for production) -->
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- ============================= -->
+    <!-- Camera Access -->
+    <!-- ============================= -->
+    <key>NSCameraUsageDescription</key>
+    <string>We need camera access to upload product photos.</string>
+
+    <!-- ============================= -->
+    <!-- Photo Library Access (Gallery) -->
+    <!-- ============================= -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your gallery to select product images.</string>
+
+    <!-- Optional: Save images to gallery -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need permission to save images to your photo library.</string>
+
+</dict>
+</plist>
